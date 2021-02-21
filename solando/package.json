@@ -1,0 +1,31 @@
+{
+  "name": "solando",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@remedy/tools": "link:../packages/tools",
+    "@remedy/generators": "link:../packages/generators",
+    "color": "^3.1.3"
+  },
+  "resolutions": {
+    "@remedy/tools": "link:../packages/tools",
+    "@remedy/generators": "link:../packages/generators"
+  },
+  "private": true,
+  "engines": {
+    "vscode": "^1.37.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Solando",
+        "uiTheme": "vs",
+        "path": "./dist/solando-theme.json"
+      }
+    ]
+  },
+  "displayName": "Solando",
+  "publisher": "robeady"
+}
