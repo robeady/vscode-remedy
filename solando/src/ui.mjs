@@ -1,22 +1,26 @@
-import { base, foreground, normal, bright } from './colours'
+import { base, normal, bright, greys } from './colours'
 import tw from "./tailwind"
 
 const text = {
-  primary: foreground,
-  secondary: foreground.lighten(0.9).desaturate(0.5),
-  dimmed: foreground.lighten(1.6).desaturate(0.5),
+  primary: greys.darkest,
+  // TODO: what are the rest of these for
+  secondary: greys.dark,
+  dimmed: greys.darkest.lighten(1.6).desaturate(0.5),
   contrast: base.lighten(0.8),
   complimentary: bright.yellow.darken(0.9).desaturate(0.3),
 }
 
 const background = {
-  code: base.lighten(0.03).desaturate(0.2),
-  panel: base,
+  code: greys.white,
+  panel: greys.lightest,
+  outer: greys.light,
+  // TODO: what's this for?
   drop: text.primary,
 }
 
-const border = background.panel.darken(0.15).desaturate(0.3)
-const shadow = text.dimmed
+const border = greys.light
+// TODO: maybe shaddows need to be a bit darker
+const shadow = greys.light
 const accent = normal.orange
 
 const button = {
@@ -52,7 +56,7 @@ const highlight = {
     matches: normal.cyan,
     source: accent,
   },
-  selection: text.primary,
+  selection: bright.blue,
   hover: text.primary,
   range: text.primary,
 }

@@ -1,23 +1,26 @@
-import { foreground, normal, bright } from './colours'
-import tailwind from "./tailwind"
+import { foreground, normal, bright, greys, keywordBlue } from './colours'
+import color from "color"
 
-const plain = tailwind.gray[900]
-const punctuation = bright.magenta.desaturate(0.6).hex()
-const primitives = normal.yellow.darken(0.2).hex()
-const comments = foreground.lighten(1).desaturate(0.6).hex()
-const language = normal.magenta.hex()
-const preprocessor = normal.cyan.hex()
-const functions = normal.blue.hex()
-const classes = bright.yellow.darken(0.3).desaturate(0.1).hex()
-const types = bright.red.hex()
-const variables = foreground.hex()
+const plain = greys.darkest.hex()
+const punctuation = greys.darkest.hex()
+const primitives = normal.yellow.hex()
+const comments = greys.mid.hex()
+const language = keywordBlue.hex()
+const preprocessor = normal.cyan.hex() // TODO what's this for
+const functions = color.hsl(230, 95, 25).hex()
+const classes = normal.cyan.hex()
+const types = normal.cyan.hex()
+const variables = greys.darkest.hex()
 const dockblockVariables = normal.white.hex()
-const constants = bright.red.hex()
-const strings = normal.green.hex()
-const escapes = normal.white.hex()
+const constants = normal.yellow.hex()
+const strings = normal.red.hex()
+const escapes = normal.red.hex()
+
+const operators = greys.darkest.hex()
 
 const regexp = {
-  sequences: bright.cyan.hex(),
+  // TODO improve this
+  sequences: normal.orange.hex(),
   ranges: bright.red.hex(),
   charsets: normal.red.hex(),
 }
@@ -30,7 +33,7 @@ const headings = bright.red.hex()
 
 // JSON, YAML etc.
 const keyvaluelike = {
-  keys: bright.red.hex(),
+  keys: normal.magenta.hex(),
 }
 
 export {
@@ -48,6 +51,7 @@ export {
   constants,
   strings,
   escapes,
+  operators,
   regexp,
   raw,
   quotes,
