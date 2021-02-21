@@ -4,7 +4,6 @@ function common({ code }) {
     scope: [
       'entity.name.tag',
       'constant.numeric',
-      'constant.language',
       'support.type.builtin',
       'support.type.primitive',
       'support.constant',
@@ -45,6 +44,26 @@ function common({ code }) {
     settings: {
       foreground: code.language,
     },
+  }
+
+  const languageConstants = {
+    name: 'Language constants',
+    scope: [
+      'constant.language'
+    ],
+    settings: {
+      foreground: code.languageConstants ?? code.language
+    }
+  }
+
+  const languageVariables = {
+    name: 'Language variables',
+    scope: [
+      'variable.language'
+    ],
+    settings: {
+      foreground: code.languageVariables ?? code.language
+    }
   }
 
   const operators = {
@@ -122,10 +141,9 @@ function common({ code }) {
   }
 
   const constants = {
-    name: 'Constants & language-provided variables',
+    name: 'Constants',
     scope: [
-      'constant',
-      'variable.language',
+      'constant'
     ],
     settings: {
       foreground: code.constants,
@@ -236,6 +254,8 @@ function common({ code }) {
     primitives,
     comments,
     language,
+    languageConstants,
+    languageVariables,
     operators,
     preprocessor,
     punctuation,

@@ -17,6 +17,7 @@ const strings = normal.red.hex()
 const escapes = normal.red.hex()
 
 const operators = greys.darkest.hex()
+const properties = normal.magenta.hex()
 
 const regexp = {
   // TODO improve this
@@ -52,6 +53,7 @@ export {
   strings,
   escapes,
   operators,
+  properties,
   regexp,
   raw,
   quotes,

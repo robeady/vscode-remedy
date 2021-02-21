@@ -18,7 +18,7 @@ const normal = {
   cyan: color.hsl(180, 70, 33),
   green: color.hsl(120, 75, 30),
   magenta: color.hsl(285, 80, 36),
-  red: color.hsl(0, 75, 33),
+  red: color.hsl(0, 76, 32),
   white: color('#707880'),
   yellow: color.hsl(50, 85, 30),
   // Extras

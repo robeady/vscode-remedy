@@ -42,7 +42,7 @@ function mksemantictokens({ code, tilts = false }) {
       fontStyle: tilts ? 'italic' : '',
     },
 
-    property: code.variables,
+    property: code.properties,
     regexp: code.regexp.sequences,
     string: code.strings,
     struct: code.types,
@@ -50,7 +50,7 @@ function mksemantictokens({ code, tilts = false }) {
     typeParameter: code.types,
     variable: code.variables,
 
-    'property.readonly': color(code.variables).mix(color(code.comments), 0.5).hex(),
+    'property.readonly': color(code.properties).mix(color(code.comments), 0.5).hex(),
     'variable.readonly': color(code.variables).mix(color(code.comments), 0.5).hex(),
     'variable.defaultLibrary': code.primitives,
 

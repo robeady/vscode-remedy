@@ -37,7 +37,7 @@ function mkui({ ui, code }) {
     'symbolIcon.methodForeground': code.functions,
     'symbolIcon.moduleForeground': code.classes,
     'symbolIcon.namespaceForeground': code.classes,
-    'symbolIcon.propertyForeground': code.constants,
+    'symbolIcon.propertyForeground': code.properties,
     'symbolIcon.stringForeground': code.strings,
     'symbolIcon.structForeground': code.types,
     'symbolIcon.variableForeground': code.escapes,
