@@ -4,7 +4,7 @@ This is my custom theme piggy-backing on the code that makes remedy tick.
 
 The theme is under ./theme and the structure here is copied from the remedy themes
 
-To build, run the default vscode build task, which will create a solando-theme.json file.
+To build, run the default vscode build task, which will create a dist/solando-color-theme.json file.
 
 ## Debugging
 

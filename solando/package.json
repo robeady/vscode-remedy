@@ -22,7 +22,7 @@
       {
         "label": "Solando",
         "uiTheme": "vs",
-        "path": "./dist/solando-theme.json"
+        "path": "./dist/solando-color-theme.json"
       }
     ]
   },
