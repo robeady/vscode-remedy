@@ -47,6 +47,16 @@ function common({ code }) {
     },
   }
 
+  const operators = {
+    name: "operators",
+    scope: [
+      "keyword.operator"
+    ],
+    settings: {
+      foreground: code.operators
+    }
+  }
+
   const preprocessor = {
     name: 'Preprocessor & directives',
     scope: [
@@ -226,6 +236,7 @@ function common({ code }) {
     primitives,
     comments,
     language,
+    operators,
     preprocessor,
     punctuation,
     classes,

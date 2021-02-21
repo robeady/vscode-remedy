@@ -46,7 +46,7 @@ function mkui({ ui, code }) {
     'symbolIcon.keywordForeground': code.language,
     'symbolIcon.nullForeground': code.primitives,
     'symbolIcon.objectForeground': code.punctuation,
-    'symbolIcon.operatorForeground': code.language,
+    'symbolIcon.operatorForeground': code.operators,
     'symbolIcon.packageForeground': code.classes,
     'symbolIcon.textForeground': code.comments,
     'symbolIcon.typeParameterForeground': code.types,
@@ -186,7 +186,7 @@ function mkui({ ui, code }) {
      */
     'activityBar.activeBorder': ui.accent.hex(),
     'activityBar.dropBorder': ui.accent.hex(),
-    'activityBar.background': ui.background.panel.hex(),
+    'activityBar.background': ui.background.outer.hex(),
     'activityBar.border': ui.border.hex(),
     'activityBar.foreground': ui.icon.foreground.hex(),
     'activityBar.inactiveForeground': ui.icon.inactive.hex(),
@@ -428,8 +428,8 @@ function mkui({ ui, code }) {
     /**
      * Status Bar Colours
      */
-    'statusBar.background': ui.background.panel.hex(),
-    'statusBar.border': ui.border.hex(),
+    'statusBar.background': ui.background.outer.hex(),
+    // 'statusBar.border': ui.border.hex(),
     'statusBar.debuggingBackground': ui.accent.hex(),
     'statusBar.debuggingForeground': ui.text.complimentary.hex(),
     'statusBar.debuggingBorder': ui.border.hex(),
@@ -463,9 +463,9 @@ function mkui({ ui, code }) {
     /**
      * Title Bar Colours
      */
-    'titleBar.border': ui.border.hex(),
-    'titleBar.activeBackground': ui.background.panel.hex(),
-    'titleBar.inactiveBackground': ui.background.code.hex(),
+    // 'titleBar.border': ui.border.hex(),
+    'titleBar.activeBackground': ui.background.outer.hex(),
+    'titleBar.inactiveBackground': ui.background.outer.hex(),
     'titleBar.activeForeground': ui.text.primary.hex(),
     'titleBar.inactiveForeground': ui.text.secondary.hex(),
 

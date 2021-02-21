@@ -36,7 +36,7 @@ function mksemantictokens({ code, tilts = false }) {
     member: code.functions,
     namespace: code.classes,
     number: code.primitives,
-    operator: code.language,
+    operator: code.operators,
     parameter: {
       foreground: code.variables,
       fontStyle: tilts ? 'italic' : '',
