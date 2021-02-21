@@ -51,13 +51,10 @@ function javascript({ code }) {
 
   const attributes = {
     scope: jstsscope([
-    // JSX element attributes
-      'meta.tag.attributes entity.other.attribute-name',
-
       'variable.other.constant.property',
     ]),
     settings: {
-      foreground: code.constants,
+      foreground: code.properties,
     },
   }
 

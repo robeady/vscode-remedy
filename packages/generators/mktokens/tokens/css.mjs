@@ -67,6 +67,15 @@ function css({ code, colours }) {
     },
   }
 
+  const properties = {
+    scope: cssscope([
+      'support.type.property-name',
+    ]),
+    settings: {
+      foreground: code.properties,
+    },
+  }
+
   return [
     tags,
     classes,
@@ -75,6 +84,7 @@ function css({ code, colours }) {
     variables,
     constants,
     functions,
+    properties
   ]
 }
 

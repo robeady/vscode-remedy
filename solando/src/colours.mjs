@@ -4,7 +4,7 @@ const base = color('#FFF')
 
 const greys = {
   black: color.hsl(220, 15, 0),
-  darkest: color.hsl(220, 15, 15),
+  darkest: color.hsl(220, 15, 10),
   dark: color.hsl(220, 15, 45),
   mid: color.hsl(220, 10, 60),
   light: color.hsl(220, 15, 90),
@@ -14,10 +14,10 @@ const greys = {
 
 const normal = {
   black: color('#282A2E'),
-  blue: color.hsl(230, 70, 43),
-  cyan: color.hsl(180, 70, 33),
+  blue: color.hsl(220, 75, 42),
+  cyan: color.hsl(180, 72, 32),
   green: color.hsl(120, 75, 30),
-  magenta: color.hsl(285, 80, 36),
+  magenta: color.hsl(290, 90, 30),
   red: color.hsl(0, 76, 32),
   white: color('#707880'),
   yellow: color.hsl(50, 85, 30),
@@ -25,7 +25,7 @@ const normal = {
   orange: color('#cc6953'),
 }
 
-const keywordBlue = normal.blue.saturate(0.3)
+const blues = { keyword:  normal.blue.saturate(0.4), secondary: normal.blue.lighten(0.1) }
 
 const bright = {
   black: color('#373B41'),
@@ -70,6 +70,6 @@ export {
   foreground,
   normal,
   bright,
-  keywordBlue,
+  blues,
   greys
 }

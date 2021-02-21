@@ -2,10 +2,7 @@ function common({ code }) {
   const primitives = {
     name: 'Primitive values',
     scope: [
-      'entity.name.tag',
       'constant.numeric',
-      'support.type.builtin',
-      'support.type.primitive',
       'support.constant',
     ],
     settings: {
@@ -25,7 +22,7 @@ function common({ code }) {
   }
 
   const language = {
-    name: 'Language tokens',
+    name: 'Language keywords',
     scope: [
       'keyword',
       'storage',
@@ -42,14 +39,25 @@ function common({ code }) {
       'storage.type.type',
     ],
     settings: {
-      foreground: code.language,
+      foreground: code.language
+    }
+  }
+
+  const languageSecondary = {
+    name: 'Language tokens',
+    scope: [
+      'support.type.builtin',
+      'support.type.primitive'
+    ],
+    settings: {
+      foreground: code.languageSecondary ?? code.language,
     },
   }
 
   const languageConstants = {
     name: 'Language constants',
     scope: [
-      'constant.language'
+      'variable.language'
     ],
     settings: {
       foreground: code.languageConstants ?? code.language
@@ -84,6 +92,7 @@ function common({ code }) {
       'entity.name.function.preprocessor',
       'entity.name.function.directive',
       'entity.name.label',
+      "meta.tag.preprocessor"
     ],
     settings: {
       foreground: code.preprocessor,
@@ -95,6 +104,8 @@ function common({ code }) {
     scope: [
       'entity.name.function',
       'support.function',
+      // xml tags
+      'entity.name.tag',
     ],
     settings: {
       foreground: code.functions,
@@ -148,6 +159,16 @@ function common({ code }) {
     settings: {
       foreground: code.constants,
     },
+  }
+
+  const attributes = {
+    name: 'Properties and attributes',
+    scope: [
+      'entity.other.attribute-name'
+    ],
+    settings: {
+      foreground: code.properties
+    }
   }
 
   const punctuation = {
@@ -254,6 +275,7 @@ function common({ code }) {
     primitives,
     comments,
     language,
+    languageSecondary,
     languageConstants,
     languageVariables,
     operators,
@@ -264,6 +286,7 @@ function common({ code }) {
     functions,
     variables,
     constants,
+    attributes,
     strings,
     escapes,
     regexps,

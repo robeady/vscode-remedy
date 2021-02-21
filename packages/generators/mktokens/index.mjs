@@ -50,8 +50,10 @@ function mksemantictokens({ code, tilts = false }) {
     typeParameter: code.types,
     variable: code.variables,
 
-    'property.readonly': color(code.properties).mix(color(code.comments), 0.5).hex(),
-    'variable.readonly': color(code.variables).mix(color(code.comments), 0.5).hex(),
+    // really I want to make mutable things underlined but I doubt language support is good enough,
+    // there's only a readonly modifier, no mutable modifier
+    // 'property.readonly': color(code.properties).mix(color(code.comments), 0.5).hex(),
+    // 'variable.readonly': color(code.variables).mix(color(code.comments), 0.5).hex(),
     'variable.defaultLibrary': code.primitives,
 
     // '*.deprecated': ui.problems.error.hex(),
