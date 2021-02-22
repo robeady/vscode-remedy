@@ -14,7 +14,7 @@ const greys = {
 
 const normal = {
   black: color('#282A2E'),
-  blue: color.hsl(220, 75, 42),
+  blue: color.hsl(220, 75, 36),
   cyan: color.hsl(180, 72, 32),
   green: color.hsl(120, 75, 30),
   magenta: color.hsl(290, 90, 30),
@@ -22,7 +22,7 @@ const normal = {
   white: color('#707880'),
   yellow: color.hsl(50, 85, 30),
   // Extras
-  orange: color('#cc6953'),
+  orange: color.hsl(25, 85, 35),
 }
 
 const blues = { keyword:  normal.blue.saturate(0.4), secondary: normal.blue.lighten(0.1) }

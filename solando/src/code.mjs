@@ -1,5 +1,4 @@
 import { foreground, normal, bright, greys, blues } from './colours'
-import color from "color"
 
 const plain = greys.darkest.hex()
 const punctuation = greys.darkest.hex()
@@ -8,7 +7,7 @@ const comments = greys.mid.hex()
 const language = blues.keyword.hex()
 const languageSecondary = blues.secondary.hex()
 const preprocessor = normal.cyan.hex() // TODO what's this for
-const functions = color.hsl(230, 95, 25).hex()
+const functions = normal.blue.darken(0.3).saturate(0.3).hex()
 const classes = normal.cyan.hex()
 const types = normal.cyan.hex()
 const variables = greys.darkest.hex()
