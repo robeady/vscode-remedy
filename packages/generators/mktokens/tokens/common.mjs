@@ -57,7 +57,7 @@ function common({ code }) {
   const languageConstants = {
     name: 'Language constants',
     scope: [
-      'variable.language'
+      'constant.language'
     ],
     settings: {
       foreground: code.languageConstants ?? code.language
