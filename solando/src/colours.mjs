@@ -23,6 +23,8 @@ const normal = {
   yellow: color.hsl(50, 85, 30),
   // Extras
   orange: color.hsl(25, 85, 35),
+  pink: color.hsl(330, 80, 40),
+  lime: color.hsl(80, 75, 30)
 }
 
 const blues = { keyword:  normal.blue.saturate(0.4), secondary: normal.blue.lighten(0.1) }
