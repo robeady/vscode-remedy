@@ -19,9 +19,9 @@ const background = {
 }
 
 const border = greys.light
-// TODO: maybe shaddows need to be a bit darker
+// TODO: maybe shadows need to be a bit darker
 const shadow = greys.light
-const accent = normal.orange
+const accent = normal.blue
 
 const button = {
   primary: accent,
@@ -30,7 +30,7 @@ const button = {
 
 const icon = {
   foreground: text.primary,
-  inactive: text.dimmed,
+  inactive: greys.mid,
   error: normal.red,
   success: normal.green,
 }
