@@ -10,17 +10,8 @@ function csharp({ code }) {
     },
   }
 
-  const types = {
-    scope: csscope([
-      'keyword.type',
-    ]),
-    settings: {
-      foreground: code.types,
-    },
-  }
   return [
     classes,
-    types,
   ]
 }
 

@@ -47,7 +47,8 @@ function common({ code }) {
     name: 'Language tokens',
     scope: [
       'support.type.builtin',
-      'support.type.primitive'
+      'support.type.primitive',
+      'keyword.type'
     ],
     settings: {
       foreground: code.languageSecondary ?? code.language,

@@ -58,11 +58,21 @@ function javascript({ code }) {
     },
   }
 
+  const operators = {
+    scope: jstsscope([
+      'storage.type.function.arrow',
+    ]),
+    settings: {
+      foreground: code.operators,
+    },
+  }
+
   return [
     builtins,
     language,
     classes,
     attributes,
+    operators,
     types,
   ]
 }
